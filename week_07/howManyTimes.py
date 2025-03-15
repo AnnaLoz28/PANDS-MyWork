@@ -15,6 +15,16 @@ def readNumber():
         number = int(f.read())
         return number
 
+# we can try to create this program with Try-Except, to see for example if the file count.txt exists:
+def readNumber():
+    try:
+        with open ("count.txt") as f:
+            number = int(f.read())
+            return(number)
+    except IOError:
+        return (0)
+
+
 
 # function that takes in a number and overwrites a file with that number
 def writeNumber(number):

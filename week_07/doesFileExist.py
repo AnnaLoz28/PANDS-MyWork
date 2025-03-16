@@ -17,11 +17,11 @@ if os.path.exists(file):
 else: 
     print("The file doesn't exist.")
 
-# check if a file exists using the os.path.isfile(path)
+# check if a file exists and if it is a file using the os.path.isfile(path). If the file doesn't exist, it will say that it is a directory.
 if os.path.isfile(file):
-    print("The file exists.")
+    print("It is a file.")
 else:
-    print("The file doesn't exist.")
+    print("It is a directory.")
 
 if not os.path.isfile(file):
     print("The file doesn't exist.")
